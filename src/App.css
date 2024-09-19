@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 5% auto;
+  grid-template-rows: 80px auto; 
+  gap: 2px;
+  background-color:#eaebff ;
+  height: 100vh; 
+  transition: all 0.3s ease;
+}
+
+.app-container.sidebar-open {
+  grid-template-columns: 10% auto; 
+}
+.main-content {
+  grid-column: 2 / -1; 
+  background-color: #eaebff;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+
